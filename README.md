@@ -1,6 +1,6 @@
 # Secure Coding Review — VitaBank Sample Banking Portal
 
-> CodeAlpha Cyber Security Internship — Task 3: Secure Coding Review
+> CodeAlpha Cyber Security Internship — Secure Coding Review
 > Conducted by **Amantle Maakelo**
 
 A complete secure code review workflow: a deliberately-vulnerable Flask
@@ -108,6 +108,6 @@ or production environment.
 
 ## Author
 
-**Amantle Maakelo** — MSc IT Management, Berlin School of Business and Innovation
-Pivoting into Cybersecurity & SAP | Founder, VitaNova Innovations
+**Amantle Maakelo** 
+Pivoting into Cybersecurity & SAP 
 [GitHub](https://github.com/amantlemaakelo)
