@@ -1,0 +1,14 @@
+<!doctype html>
+<title>VitaBank — Admin: Users</title>
+<h1>All Users (admin only)</h1>
+<table border="1" cellpadding="6">
+  <tr><th>ID</th><th>Username</th><th>Balance</th><th>Admin</th></tr>
+  {% for u in users %}
+  <tr>
+    <td>{{ u['id'] }}</td>
+    <td>{{ u['username'] }}</td>
+    <td>${{ "%.2f"|format(u['balance']) }}</td>
+    <td>{{ 'Yes' if u['is_admin'] else 'No' }}</td>
+  </tr>
+  {% endfor %}
+</table>

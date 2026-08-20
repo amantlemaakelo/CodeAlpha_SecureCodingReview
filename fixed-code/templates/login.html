@@ -1,0 +1,12 @@
+<!doctype html>
+<title>VitaBank — Login</title>
+<h1>VitaBank Login</h1>
+{% if error %}
+  <p style="color:red">{{ error }}</p>
+{% endif %}
+<form method="post">
+  {{ csrf_token() if csrf_token is defined else "" }}
+  Username: <input name="username"><br>
+  Password: <input name="password" type="password"><br>
+  <input type="submit" value="Log in">
+</form>
