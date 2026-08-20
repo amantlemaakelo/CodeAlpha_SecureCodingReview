@@ -6,16 +6,16 @@
 A complete secure code review workflow: a deliberately-vulnerable Flask
 "internal banking portal" sample app, a professional-format audit report
 identifying 10 real vulnerabilities (manually reviewed + confirmed with
-Bandit static analysis), and a fully remediated version of the code —
+Bandit static analysis), and a fully remediated version of the code,
 **re-scanned to verify the fixes actually work.**
 
 ## Why this framing
 
 Internal financial tools are often built fast, by small teams, without a
-formal security review — and that's exactly where serious vulnerabilities
+formal security review and that's exactly where serious vulnerabilities
 slip through. Rather than review a toy "hello world" app, this project
 audits a small transaction-handling application (login, fund transfers,
-account statements, admin panel) — the same feature set as countless real
+account statements, admin panel), the same feature set as countless real
 internal banking tools — so the findings actually reflect what a reviewer
 would encounter in a banking or fintech environment.
 
@@ -51,7 +51,7 @@ main deliverable and reads like a professional security audit report.
 
 Covers SQL injection, broken access control, weak cryptography, reflected
 XSS, missing CSRF protection, path traversal, and security
-misconfiguration — mapped to both CWE and OWASP Top 10 (2021) categories.
+misconfiguration , mapped to both CWE and OWASP Top 10 (2021) categories.
 
 ## Methodology
 
@@ -95,7 +95,7 @@ bandit fixed-code/app.py
   security lens, not just run a scanner and copy-paste output
 - Familiarity with the OWASP Top 10 and CWE classification, and how to
   communicate findings clearly to a technical or non-technical audience
-- Practical remediation skills — not just "this is bad" but concrete,
+- Practical remediation skills , not just "this is bad" but concrete,
   framework-appropriate fixes
 - A verification mindset: claims are backed by a re-scan, matching how a
   real audit would close out findings
